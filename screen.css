@@ -3,8 +3,14 @@
     src: url('/Quella.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Regular';
+    src: url('/Lato/Lato-Regular.ttf') format('opentype');
+}
 
 
 h1 {
     font-family: 'Quella', serif;
 }
+
+p{ font-family:'Regular', sans-serif; }

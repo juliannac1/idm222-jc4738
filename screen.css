@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Quella';
+    src: url('/Quella.otf') format('opentype');
+}
+
+
+
+h1 {
+    font-family: 'Quella', serif;
+}

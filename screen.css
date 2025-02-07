@@ -16,3 +16,83 @@ h1 {
 p{ 
     font-family:'Regular', sans-serif; 
 }
+
+header {
+    background: #ACC3B6;
+    height: 48px;
+    width: 100%;
+  
+    position: fixed;
+    left: 0;
+    top: 0;
+  
+    label {
+      cursor: pointer;
+      height: 20px;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 26px;
+      z-index: 1001;
+      
+      span {
+        background-color: #302513;
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+  
+        transform-origin: left;
+  
+        &:nth-child(1) {
+          top: 0;
+        }
+  
+        &:nth-child(2) {
+          top: 8px;
+        }
+  
+        &:nth-child(3) {
+          top: 16px;
+        }
+      }
+    }
+  }
+  
+  nav {
+    background: #3F0106;
+    height: 100vh;
+    margin-block-start: 48px;
+    width: 300px;
+  
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        padding: 0;
+  
+        a {
+          color: #F9EEEE;
+          display: block;
+          font-size: 1.25rem;
+          padding-block: 1rem;
+          padding-inline: 1rem;
+          text-decoration: none;
+          
+          /* when you hover the nav it turns these colors*/
+          &:hover {
+            background-color: #D8E6DB;
+            color: #3F0106;
+          }
+        }
+      }
+    }
+  }

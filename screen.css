@@ -11,15 +11,20 @@
 
 h1 {
     font-family: 'Quella', serif;
+    color:#F9EEEE
 }
 
 p{ 
     font-family:'Regular', sans-serif; 
+    color:#F9EEEE
 }
 
+html{
+    background: #130303
+}
 header {
-    background: #ACC3B6;
-    height: 48px;
+    background: #3F0106;
+    height: 50px;
     width: 100%;
   
     position: fixed;
@@ -36,7 +41,7 @@ header {
       z-index: 1001;
       
       span {
-        background-color: #302513;
+        background-color: #F9EEEE;
         border-radius: 2px;
         display: block;
         height: 3px;
@@ -61,7 +66,7 @@ header {
   }
   
   nav {
-    background: #3F0106;
+    background: #F9EEEE;
     height: 100vh;
     margin-block-start: 48px;
     width: 300px;
@@ -80,7 +85,7 @@ header {
         padding: 0;
   
         a {
-          color: #F9EEEE;
+          color: #3F0106;
           display: block;
           font-size: 1.25rem;
           padding-block: 1rem;

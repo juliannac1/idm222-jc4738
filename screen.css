@@ -7,11 +7,20 @@
     font-family: 'Regular';
     src: url('/Lato/Lato-Regular.ttf') format('truetype');
 }
-
+body{
+  margin: 62px auto;
+  width: 95%;
+}
 
 h1 {
     font-family: 'Quella', serif;
     color:#F9EEEE
+}
+
+h3 {
+  font-family: 'Quella', serif;
+  color:#F9EEEE;
+  margin: 10px;
 }
 
 p{ 
@@ -19,12 +28,27 @@ p{
     color:#F9EEEE
 }
 
+img{
+  border-radius: 15px;
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed its original size */
+  
+} 
 html{
     background: #130303
 }
-  .container{
-    display:flex;
-  }
+
+body,
+container{
+  min-height: 100vh;
+}
+
+.container{
+  display:flex;  
+  flex-direction: column;
+  gap:1em;
+  margin: 2em 5em;
+}
 
   header{
     flex: 1;
@@ -36,7 +60,7 @@ html{
       position: fixed;
       left: 0;
       top: 0;
-    
+
       label {
         cursor: pointer;
         height: 20px;
@@ -45,6 +69,7 @@ html{
         top: 1rem;
         width: 26px;
         z-index: 1001;
+        padding: 10px 0;
         
         span {
           background-color: #F9EEEE;
@@ -72,6 +97,7 @@ html{
     }
     
     nav {
+      font-family: 'Quella', serif;
       background: #3F0106;
       height: 100vh;
       margin-block-start: 48px;
@@ -129,6 +155,74 @@ html{
     
 
 section{
-  flex: 2;
-  
+  flex: 4;
+  display:flex;
+}
+
+.col-left,
+.col-right{
+  flex:1;
+  margin: 1em;
+}
+
+
+
+@media (max-width: 800px){
+ section,
+ .container.second section{
+ flex-direction:column;
+ }
+ .container{
+  margin: 1em 2em;
+ }
+}
+
+
+.table-section {
+  display: flex;
+  justify-content: center;  /* Center the content horizontally */
+  align-items: center;      /* Center the content vertically */
+  padding: 2rem;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  min-height: 50vh;  
+  box-sizing: border-box;  
+}
+
+.table {
+  display: block;  
+  background-color: #130303;  /* Dark background for the table */
+  border-radius: 10px;        /* Rounded corners for the container */
+  padding: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  /* Add shadow */
+  width: 80%;  /* Control the width */
+  max-width: 600px;  /* Ensure the width is not too large */
+  color: #F9EEEE;  /* Light text color */
+}
+
+.table ul {
+  list-style: none;  /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.table li {
+  margin-bottom: 1rem;  /* Add space between links */
+}
+
+.table a {
+  text-decoration: none;  /* Remove underline */
+  color: #F9EEEE;         /* Light color for the links */
+  font-size: 1.25rem;     /* Adjust the font size */
+  display: block;         /* Make the links block-level to give them space */
+  padding: 1rem;          /* Padding around the links */
+  border-radius: 5px;     /* Rounded corners for the links */
+  text-align: center;     /* Center text in the links */
+  transition: background-color 0.3s ease;
+}
+
+.table a:hover {
+  background-color: #F9EEEE;  /* Light background on hover */
+  color: #302513;  /* Dark text color when hovered */
 }

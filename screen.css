@@ -25,12 +25,13 @@ h3 {
 
 p{ 
     font-family:'Regular', sans-serif; 
-    color:#F9EEEE
+    color:#F9EEEE;
 }
 
 img{
   border-radius: 15px;
   height: auto; /* Maintain aspect ratio */
+  max-height: 100%;
   max-width: 100%; /* Ensure it doesn't exceed its original size */
   
 } 

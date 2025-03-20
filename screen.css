@@ -200,6 +200,7 @@ section{
   width: 80%;  /* Control the width */
   max-width: 600px;  /* Ensure the width is not too large */
   color: #F9EEEE;  /* Light text color */
+  margin: 0 auto;
 }
 
 .table ul {
@@ -227,3 +228,35 @@ section{
   background-color: #F9EEEE;  /* Light background on hover */
   color: #302513;  /* Dark text color when hovered */
 }
+
+.intro {
+  position: fixed; /* Fix the position relative to the viewport */
+  bottom: 0; /* Align to the bottom of the page */
+  right: 0; /* Align to the right margin */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding for spacing */
+  background-color: #1303037a;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.homePic{
+  height: 100vh;
+  width: fit-content;
+}
+
+.peopleTitle{
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.begText{
+  text-align: right;
+}
+
+.bottomAbout{
+  position: relative; /* Position the paragraph absolutely */
+  bottom: 0; /* Align to the bottom */
+  margin-top: 50px;
+}
+
